@@ -1,0 +1,9 @@
+<odoo>
+    <data>
+        <menuitem id="estate_menu_root" name="Root">
+            <menuitem id="estate_menu_first_level" name="First Level">
+                <menuitem id="estate_model_menu_action" action="estate_property_model_action"/>
+            </menuitem>
+        </menuitem>
+    </data>
+</odoo>
