@@ -10,6 +10,16 @@
                     <field name="status"/>
                     <field name="date_deadline"/>
                     <field name="validity"/>
+                    <button name="action_accept_offer"
+                        type="object"
+                        string="Accept"
+                        icon="fa-check"
+                        class="w-25"/>
+                    <button name="action_reject_offer"
+                        type="object"
+                        string="Refuse"
+                        icon="fa-times"
+                        class="w-25"/>
                 </list>
             </field>
         </record>

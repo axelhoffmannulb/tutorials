@@ -53,3 +53,13 @@ class PropertyOffer(models.Model):
             'target': 'current',
             'context': self.env.context
         }
+
+    def action_accept_offer(self):
+        for record in self :
+            record.status = 'accepted'
+            record.property_id.selling_price = self.price
+            record.property_id.partner_id = self.partner_id.id
+
+    def action_reject_offer(self):
+        for record in self :
+            record.status = 'refused'

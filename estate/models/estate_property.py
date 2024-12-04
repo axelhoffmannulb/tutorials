@@ -1,5 +1,6 @@
 from datetime import date, timedelta
 from odoo import models, fields, api
+from odoo.exceptions import UserError
 
 class Property(models.Model):
     _name = "estate.property"
@@ -82,3 +83,16 @@ class Property(models.Model):
             'target': 'current',
             'context': self.env.context
         }
+
+    def sold_property(self):
+        for record in self:
+            if record.state == 'cancelled':
+                raise UserError("A cancelled property cannot be sold")
+            record.state = 'sold'
+
+    def cancel_property(self):
+        for record in self:
+            if record.state == 'sold':
+                raise UserError("A sold property cannot be cancelled")
+            record.state = 'cancelled'
+
