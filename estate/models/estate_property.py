@@ -38,3 +38,13 @@ class Property(models.Model):
         required=True,
         default='new',
     )
+
+    def action_edit_property(self):
+        return {
+            'type': 'ir.actions.act_window',
+            'res_model': self._name,
+            'view_mode': 'form',
+            'res_id': self.id,
+            'target': 'current',
+            'context': self.env.context
+        }
