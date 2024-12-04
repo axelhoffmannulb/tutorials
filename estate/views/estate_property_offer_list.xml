@@ -5,9 +5,11 @@
             <field name="model">estate.property.offer</field>
             <field name="arch" type="xml">
                 <list string="Types" create="New type">
-                        <field name="price" string="Price"/>
-                        <field name="partner_id" string="Buyer"/>
-                        <field name="status"/>
+                    <field name="price" string="Price"/>
+                    <field name="partner_id" string="Buyer"/>
+                    <field name="status"/>
+                    <field name="date_deadline"/>
+                    <field name="validity"/>
                 </list>
             </field>
         </record>
