@@ -6,6 +6,10 @@ class PropertyType(models.Model):
 
     name = fields.Char(string='Name', required=True)
 
+    _sql_constraints = [
+        ('name_uniq', 'UNIQUE (name)', 'Name must be unique')
+    ]
+
     def action_edit_property_type(self):
         return {
             'type': 'ir.actions.act_window',
