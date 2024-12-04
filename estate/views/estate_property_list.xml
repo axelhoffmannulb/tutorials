@@ -4,7 +4,7 @@
             <field name="name">estate.property.list</field>
             <field name="model">estate.property</field>
             <field name="arch" type="xml">
-                <list string="Properties" create="true">
+                <list string="Properties" create="New property">
                     <field name="name" string="Title"/>
                     <field name="postcode" string="Postcode"/>
                     <field name="bedrooms" string="Bedrooms"/>
@@ -16,7 +16,7 @@
                         type="object"
                         string="Edit"
                         icon="fa-edit"
-                        class="btn-sm"/>
+                        class="w-25"/>
                 </list>
             </field>
         </record>

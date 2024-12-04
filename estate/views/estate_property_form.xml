@@ -7,9 +7,9 @@
                 <form string="Property Form">
                     <sheet>
                         <group>
-                            <group>
+                            <group class="w-100">
                                 <h1>
-                                   <field name="name" />
+                                   <field name="name" class="w-50" />
                                 </h1>
                             </group>
                             <group>
@@ -31,6 +31,8 @@
                                 <field name="garden"/>
                                 <field name="garden_area"/>
                                 <field name="garden_orientation"/>
+                                <field name="active"/>
+                                <field name="state"/>
                             </group>
                         </group>
                     </sheet>
