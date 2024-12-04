@@ -12,6 +12,13 @@
                                    <field name="name" class="w-50" />
                                 </h1>
                             </group>
+                            <field name="property_ids">
+                                <list>
+                                    <field name="name" string="Title"/>
+                                    <field name="expected_price"/>
+                                    <field name="state" string="Status"/>
+                                </list>
+                            </field>
                         </group>
                     </sheet>
                 </form>
