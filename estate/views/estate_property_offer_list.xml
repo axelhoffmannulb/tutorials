@@ -14,12 +14,15 @@
                         type="object"
                         string="Accept"
                         icon="fa-check"
-                        class="w-25"/>
+                        class="w-25"
+                        invisible="status in ['accepted', 'refused']"
+                    />
                     <button name="action_reject_offer"
                         type="object"
                         string="Refuse"
                         icon="fa-times"
-                        class="w-25"/>
+                        class="w-25"
+                        invisible="status in ['accepted', 'refused']"/>
                 </list>
             </field>
         </record>

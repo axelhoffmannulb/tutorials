@@ -9,6 +9,8 @@ class PropertyType(models.Model):
 
     property_ids = fields.One2many('estate.property',"property_type_id", string="Property")
 
+    sequence = fields.Integer(string='Sequence')
+
     _sql_constraints = [
         ('name_uniq', 'UNIQUE (name)', 'Name must be unique')
     ]

@@ -7,6 +7,8 @@ class PropertyTag(models.Model):
 
     name = fields.Char(string='Name', required=True)
 
+    color = fields.Integer(string='Color')
+
     _sql_constraints = [
         ('name_uniq', 'UNIQUE(name)', 'Name must be unique')
     ]

@@ -5,6 +5,7 @@
             <field name="model">estate.property.type</field>
             <field name="arch" type="xml">
                 <list string="Types" create="New type">
+                    <field name="sequence" widget="handle"/>
                     <field name="name" string="Title"/>
                     <button name="action_edit_property_type"
                         type="object"
